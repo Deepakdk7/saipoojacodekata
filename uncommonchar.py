@@ -1,21 +1,21 @@
-str1=input()
-str2=input()
-arr=[]
-if (str1.isalpha() or " " in str1) and (str2.isalpha() or " " in str2):
-    str1=list(str1.split(" "))
-    str2=list(str2.split(" "))
-    for i in str1:
-        if str1.count(i) > str2.count(i) and i not in arr:
-            arr.append(i)
-    for i in str2:
-        if str2.count(i)>str1.count(i) and i not in arr:
-            arr.append(i)
-    print(*arr)
+ax=input()
+bx=input()
+a=[]
+if (ax.isalpha() or " " in ax) and (bx.isalpha() or " " in bx):
+    ax=list(ax.split())
+    bx=list(bx.split())
+    for i in ax:
+        if ax.count(i) > bx.count(i) and i not in a:
+            a.append(i)
+    for i in bx:
+        if bx.count(i)>ax.count(i) and i not in a:
+            a.append(i)
+    print(*a)
 else:
-    for i in str1:
-        if str1.count(i)>str2.count(i) and i not in arr:
-            arr.append(i)
-    for j in str2:
-        if str2.count(j)>str1.count(j) and j not in arr:
-            arr.append(j)
-    print(*arr)
+    for i in ax:
+        if ax.count(i)>bx.count(i) and i not in a:
+            a.append(i)
+    for j in bx:
+        if bx.count(j)>ax.count(j) and j not in a:
+            a.append(j)
+    print(*a)
